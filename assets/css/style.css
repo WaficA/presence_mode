@@ -1,0 +1,594 @@
+/* ==========================================================================
+   AetherMind – Dark Sovereign UI
+   Tactical Mesh • Gold Accent • Intelligence Console Vibe
+   ========================================================================== */
+
+/* RESET / BASE ------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #050608;
+  color: #E8ECF2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "Roboto", "Roboto Condensed", sans-serif;
+  line-height: 1.6;
+}
+
+/* LAYOUT HELPERS ----------------------------------------------------------- */
+
+.am-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+main {
+  padding-top: 72px;
+}
+
+/* ================================
+   HERO LOGO PLACEMENT (unchanged)
+   ================================ */
+
+.am-hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.am-hero-logo img {
+  width: 260px;
+  max-height: 200px;
+  object-fit: contain;
+  opacity: 0.92;
+  transition: transform 0.35s ease, filter 0.35s ease, opacity 0.35s ease;
+  filter: drop-shadow(0 0 2px rgba(212,175,55,0.10)) brightness(1.03);
+}
+
+
+.am-hero-logo img:hover {
+  transform: scale(1.06);
+  opacity: 1;
+  filter: drop-shadow(0 0 12px rgba(212,175,55,0.45)) brightness(1.13);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .am-hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .am-hero-logo img {
+    margin-top: 30px;
+    width: 200px;
+  }
+}
+
+/* COLORS (REFERENCE) -------------------------------------------------------
+   Gold Accent:      #D4AF37
+   Dark Background:  #050608
+   Panel Dark:       #0C1015
+   Border Dark:      #181C24
+   Text Primary:     #E8ECF2
+   Text Secondary:   #9EA4B1
+   Muted:            #6B7280
+   ------------------------------------------------------------------------- */
+
+/* HEADER ------------------------------------------------------------------- */
+
+.am-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(5, 7, 10, 0.96);
+  border-bottom: 1px solid #181C24;
+  backdrop-filter: blur(10px);
+}
+
+.am-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.am-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.am-logo-mark {
+  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.am-logo-sub {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #9EA4B1;
+  letter-spacing: 0.2em;
+}
+
+/* NAV ---------------------------------------------------------------------- */
+
+.am-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.am-nav-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #A0A7B3;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.am-nav-link:hover {
+  color: #F5F5F5;
+}
+
+.am-nav-link-active {
+  color: #F5F5F5;
+}
+
+.am-nav-link-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 22px;
+  background: #D4AF37;
+}
+
+/* HERO --------------------------------------------------------------------- */
+
+.am-hero {
+  padding: 6rem 0 4rem;
+  background:
+    /* tactical mesh overlay */
+    linear-gradient(
+      rgba(7, 10, 15, 0.96),
+      rgba(5, 7, 10, 0.98)
+    ),
+    repeating-linear-gradient(
+      135deg,
+      rgba(212, 175, 55, 0.06) 0px,
+      rgba(212, 175, 55, 0.06) 1px,
+      transparent 1px,
+      transparent 9px
+    ),
+    radial-gradient(circle at top, #171C26 0%, #050608 60%);
+}
+
+.am-hero-sub {
+  padding: 5rem 0 3rem;
+}
+
+.am-hero-inner {
+  display: flex;
+  align-items: center;
+}
+
+.am-hero-text {
+  max-width: 640px;
+}
+
+.am-hero-title {
+  font-size: 2.3rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  margin: 0 0 1rem;
+}
+
+.am-hero-subtitle {
+  font-size: 0.94rem;
+  color: #A3AAB7;
+  max-width: 580px;
+}
+
+.am-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.am-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #787F8B;
+}
+
+
+/* BUTTONS ------------------------------------------------------------------ */
+
+.am-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease,
+              box-shadow 0.15s ease, transform 0.1s ease;
+}
+
+.am-btn-primary {
+  background: #D4AF37;
+  border-color: #D4AF37;
+  color: #050608;
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.3),
+              0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.am-btn-primary:hover {
+  background: #E2C25A;
+  border-color: #E2C25A;
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 1px rgba(226, 194, 90, 0.4),
+              0 14px 28px rgba(0, 0, 0, 0.7);
+}
+
+.am-btn-ghost {
+  background: transparent;
+  border-color: #363C48;
+  color: #E8ECF2;
+}
+
+.am-btn-ghost:hover {
+  border-color: #D4AF37;
+  color: #FDFDFD;
+}
+
+/* SECTIONS ----------------------------------------------------------------- */
+
+.am-section {
+  padding: 3.5rem 0;
+  background: #050608;
+}
+
+.am-section-alt {
+  background: #070B10;
+}
+
+.am-section-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.am-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.am-section-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.am-section-tag {
+  font-size: 0.64rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  padding: 0.25rem 0.72rem;
+  border-radius: 999px;
+  border: 1px solid #272D38;
+  color: #A0A7B3;
+}
+
+.am-section-text {
+  font-size: 0.95rem;
+  color: #E2E6EE;
+}
+
+/* GRID & CARDS ------------------------------------------------------------- */
+
+.am-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.am-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.am-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.am-grid-padded {
+  margin-top: 0.5rem;
+}
+
+.am-card {
+  border: 1px solid #181C24;
+  border-radius: 10px;
+  padding: 1.25rem 1.25rem 1.35rem;
+  background:
+    linear-gradient(135deg, rgba(212, 175, 55, 0.06), transparent 60%),
+    #0A0F16;
+  box-shadow: 0 0 0 1px rgba(15, 18, 25, 0.8);
+}
+
+.am-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.am-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #D6DAE3;
+}
+
+.am-card-label {
+  font-size: 0.64rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #7A8290;
+  margin-bottom: 0.4rem;
+}
+
+.am-card-compact {
+  padding: 1rem 1rem 1.1rem;
+}
+
+/* CALLOUTS ----------------------------------------------------------------- */
+
+.am-callout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.am-callout-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #272D38;
+  color: #A0A7B3;
+}
+
+.am-callout-strong {
+  border-radius: 10px;
+  border: 1px solid #272D38;
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #E8ECF2;
+}
+
+/* FORM --------------------------------------------------------------------- */
+
+.am-form-wrapper {
+  max-width: 720px;
+}
+
+.am-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.am-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #A0A7B3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.am-input,
+.am-field input,
+.am-field textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #1D2430;
+  background: #05070B;
+  color: #E8ECF2;
+  font-size: 0.9rem;
+}
+
+.am-input:focus,
+.am-field input:focus,
+.am-field textarea:focus {
+  outline: 1px solid #D4AF37;
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.25);
+}
+
+.am-textarea,
+.am-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.am-form-note,
+.am-note {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #7C8492;
+}
+
+/* FOOTER ------------------------------------------------------------------- */
+
+.am-footer {
+  border-top: 1px solid #181C24;
+  background: #040507;
+  padding: 1.75rem 0;
+}
+
+.am-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.am-footer-title {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.am-footer-subtitle {
+  font-size: 0.75rem;
+  color: #A0A7B3;
+}
+
+.am-footer-meta {
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+  color: #7C8492;
+}
+
+.am-footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.am-footer-link {
+  font-size: 0.75rem;
+  color: #A0A7B3;
+  text-decoration: none;
+}
+
+.am-footer-link:hover {
+  color: #F5F5F5;
+}
+
+/* RESPONSIVE --------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .am-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding-top: 96px;
+  }
+
+  .am-nav {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .am-hero-inner {
+    padding-top: 0.5rem;
+  }
+
+  .am-hero-title {
+    font-size: 1.8rem;
+  }
+
+  .am-footer-inner {
+    flex-direction: column;
+  }
+}
+
+/* ================================
+   FLOATING ENCRYPTED RUNES
+===================================*/
+
+.am-float {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8vh;
+  opacity: 0.45;
+  z-index: 1;
+}
+
+.am-float-left  { left: 2vw; }
+.am-float-right { right: 2vw; }
+
+
+/* FLOATING ANIMATIONS — RANDOM DRIFT */
+@keyframes drift {
+  0%   { transform: translate(0,0) rotate(0deg); opacity: 0.10; }
+  25%  { transform: translate(8px,-12px) rotate(3deg); opacity: 0.18; }
+  50%  { transform: translate(-6px,8px) rotate(-2deg); opacity: 0.12; }
+  75%  { transform: translate(10px,4px) rotate(4deg); opacity: 0.16; }
+  100% { transform: translate(0,0) rotate(0deg); opacity: 0.10; }
+}
+
+.rune {
+  color: rgba(212,175,55,0.35);
+  font-size: 2.4rem;
+  display: block;
+  animation: drift 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Slight Variations */
+.rune:nth-child(2) { animation-delay: 2.5s; font-size: 3rem; }
+.rune:nth-child(3) { animation-delay: 4.7s; font-size: 2.2rem; }
+
+/* Fade slightly when scrolling */
+body.scrolled .am-float { opacity: 0.15; }
+
+/* Disable on Mobile + Move Fully Outside */
+@media (max-width: 900px) {
+  .am-float { display: none; }
+  .am-float-left { left: -999px !important; }
+  .am-float-right { right: -999px !important; }
+}
+
