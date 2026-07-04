@@ -2,179 +2,217 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AetherMind - Sovereign Infrastructure</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Offline-deployable AI & Cloud systems that operate without the Internet. AetherMind builds sovereign infrastructure.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AetherMind builds and operates its own infrastructure. Fenrir is a private communication platform — owned infrastructure, no phone number required, no ad model.">
+  <title>AetherMind — Private Communication Infrastructure</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<!-- FLOATING RUNES -->
-<div class="am-float am-float-left">
-  <span class="rune">⟒</span>
-  <span class="rune">⟢</span>
-  <span class="rune">ᚱ</span>
-  <span class="rune">ᚦ</span>
-  <span class="rune">⋔</span>
-</div>
-
-<div class="am-float am-float-right">
-  <span class="rune">ᛉ</span>
-  <span class="rune">⟁</span>
-  <span class="rune">ᚬ</span>
-  <span class="rune">⨳</span>
-  <span class="rune">⋈</span>
-</div>
 <body>
-<header class="am-header">
-  <div class="am-container am-header-inner">
-    <div class="am-logo">
-      <span class="am-logo-mark">AETHERMIND SIC</span>
-      <span class="am-logo-sub">SOVEREIGN SYSTEMS</span>
+
+  <!-- ── NAV ──────────────────────────────────────────────── -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fenrir.html">Fenrir</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="under-construction.html" class="btn btn-primary btn-sm">Notify me when it's ready</a>
+        </div>
+        <button class="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-    <nav class="am-nav">
-      <a href="index.html" class="am-nav-link am-nav-link-active">Home</a>
-      <a href="aethernode.html" class="am-nav-link">AetherNode</a>
-      <a href="lab.html" class="am-nav-link">Lab</a>
-      <a href="use-cases.html" class="am-nav-link">Use Cases</a>
-      <a href="request-briefing.html" class="am-nav-link">Request Briefing</a>
-      <a href="security.html" class="am-nav-link">Sovereignty</a>
-    </nav>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Navigation">
+    <a href="index.html">Home</a>
+    <a href="fenrir.html">Fenrir</a>
+    <a href="security.html">Security</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="about.html">About</a>
+    <a href="under-construction.html" class="btn btn-primary" style="margin-top: 8px;">Notify me when it's ready</a>
   </div>
-</header>
 
-<main>
-  <!-- Hero -->
-  <section class="am-hero">
-  <div class="am-container am-hero-inner">
-
-    <div class="am-hero-text">
-      <h1 class="am-hero-title">SOVEREIGN INFRASTRUCTURE.<br>DELIVERED ANYWHERE.</h1>
-      <p class="am-hero-subtitle">
-        AI & Cloud systems that run offline, deploy from a flash drive, and remain fully owned by you.
-        No foreign cloud. No external control.
-      </p>
-      <div class="am-hero-buttons">
-        <a href="aethernode.html" class="am-btn am-btn-primary">EXPLORE THE AETHERNODE</a>
-        <a href="request-briefing.html" class="am-btn am-btn-outline">REQUEST BRIEFING</a>
-      </div>
-    </div>
-
-    <!-- NEW HERO LOGO ON RIGHT SIDE -->
-    <div class="am-hero-logo">
-      <img src="assets/img/branding/white.svg" alt="AetherMind Logo">
-    </div>
-
-  </div>
-</section>
-
-
-  <!-- Intro -->
-  <section class="am-section">
-    <div class="am-container am-section-inner">
-      <div class="am-section-header">
-        <h2>Computing Without Foreign Control</h2>
-        <div class="am-section-tag">OVERVIEW</div>
-      </div>
-      <p class="am-section-text">
-        Most systems today depend on third-party cloud platforms and remote data centers.
-        AetherMind builds autonomous infrastructure that installs, operates, and secures itself
-        <strong>without any online connection</strong>.
-      </p>
-      <p class="am-section-text">
-        From a single node in a remote location to a distributed mesh of secure machines,
-        we enable AI and cloud workloads to run independently, under your rules, on your hardware.
-      </p>
-      <div class="am-callout">
-        <span class="am-callout-label">COLD DEPLOYED</span>
-        <span class="am-callout-label">AIR-GAPPED</span>
-        <span class="am-callout-label">SOVEREIGN BY DESIGN</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technology pillars preview -->
-  <section class="am-section am-section-alt">
-    <div class="am-container am-section-inner">
-      <div class="am-section-header">
-        <h2>Technology Pillars</h2>
-        <div class="am-section-tag">ARCHITECTURE</div>
-      </div>
-      <div class="am-grid am-grid-3">
-        <div class="am-card">
-          <div class="am-card-label">01</div>
-          <h3>SOVEREIGN AI</h3>
-          <p>
-            Models run entirely on owned hardware with zero dependence on external APIs,
-            telemetry or remote model providers.
+  <!-- ── HERO ──────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="hero-dot"></span>
+            <span class="label label-signal">Fenrir — Now in Development</span>
+          </div>
+          <h1 class="display">
+            Your conversations.<br>
+            <em>Nobody else's business.</em>
+          </h1>
+          <p class="lead" style="margin-top: 24px;">
+            Fenrir is a communication platform built and operated by AetherMind.
+            We own the infrastructure. You own the conversation.
           </p>
+          <div class="hero-actions">
+            <a href="under-construction.html" class="btn btn-primary btn-lg">Notify me when it's ready</a>
+            <a href="fenrir.html" class="btn btn-ghost btn-lg">Learn about Fenrir</a>
+          </div>
         </div>
-        <div class="am-card">
-          <div class="am-card-label">02</div>
-          <h3>OFFLINE CLOUD</h3>
-          <p>
-            Deploy a full cloud stack - compute, networking and storage - from a flash drive,
-            without downloading anything.
-          </p>
-        </div>
-        <div class="am-card">
-          <div class="am-card-label">03</div>
-          <h3>HARDWARE INTELLIGENCE</h3>
-          <p>
-            Systems aware of GPUs, CPU topology, IOMMU, VFIO, NUMA and NICs, enabling
-            performance grounded in the metal.
-          </p>
-        </div>
-      </div>
-      <div class="am-grid am-grid-2 am-grid-padded">
-        <div class="am-card">
-          <div class="am-card-label">04</div>
-          <h3>COLD DEPLOYMENT</h3>
-          <p>
-            Reproducible offline deployment from a curated repository, ideal for sensitive
-            or remote environments.
-          </p>
-        </div>
-        <div class="am-card">
-          <div class="am-card-label">05</div>
-          <h3>SECURE AUTONOMY</h3>
-          <p>
-            Infrastructure agents designed to manage, isolate and contain workloads even when
-            external networks are unavailable.
-          </p>
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <circle cx="240" cy="240" r="200" stroke="#1E1E2A" stroke-width="1"/>
+            <circle cx="240" cy="240" r="140" stroke="#1E2E6A" stroke-width="1" stroke-dasharray="4 8"/>
+            <circle cx="240" cy="240" r="80" stroke="#1E1E2A" stroke-width="1"/>
+            <circle cx="240" cy="240" r="28" fill="#111118" stroke="#4B6EF5" stroke-width="1.5"/>
+            <circle cx="240" cy="240" r="6" fill="#4B6EF5"/>
+            <circle cx="240" cy="40" r="8" fill="#111118" stroke="#1E2E6A" stroke-width="1.5"/>
+            <circle cx="240" cy="40" r="3" fill="#4B6EF5" opacity="0.6"/>
+            <circle cx="240" cy="440" r="8" fill="#111118" stroke="#1E2E6A" stroke-width="1.5"/>
+            <circle cx="240" cy="440" r="3" fill="#4B6EF5" opacity="0.6"/>
+            <circle cx="40" cy="240" r="8" fill="#111118" stroke="#1E2E6A" stroke-width="1.5"/>
+            <circle cx="40" cy="240" r="3" fill="#4B6EF5" opacity="0.6"/>
+            <circle cx="440" cy="240" r="8" fill="#111118" stroke="#1E2E6A" stroke-width="1.5"/>
+            <circle cx="440" cy="240" r="3" fill="#4B6EF5" opacity="0.6"/>
+            <circle cx="339" cy="141" r="6" fill="#111118" stroke="#4B6EF5" stroke-width="1" opacity="0.7"/>
+            <circle cx="141" cy="339" r="6" fill="#111118" stroke="#4B6EF5" stroke-width="1" opacity="0.7"/>
+            <circle cx="141" cy="141" r="6" fill="#111118" stroke="#1E2E6A" stroke-width="1" opacity="0.5"/>
+            <circle cx="339" cy="339" r="6" fill="#111118" stroke="#1E2E6A" stroke-width="1" opacity="0.5"/>
+            <line x1="240" y1="212" x2="240" y2="48" stroke="#1E2E6A" stroke-width="1" opacity="0.6"/>
+            <line x1="240" y1="268" x2="240" y2="432" stroke="#1E2E6A" stroke-width="1" opacity="0.6"/>
+            <line x1="268" y1="240" x2="432" y2="240" stroke="#1E2E6A" stroke-width="1" opacity="0.6"/>
+            <line x1="212" y1="240" x2="48" y2="240" stroke="#1E2E6A" stroke-width="1" opacity="0.6"/>
+            <rect x="233" y="237" width="14" height="10" rx="1" fill="#4B6EF5" opacity="0.9"/>
+            <path d="M236 237 v-3 a4 4 0 0 1 8 0 v3" stroke="#4B6EF5" stroke-width="1.5" fill="none" opacity="0.9"/>
+            <text x="252" y="39" fill="#4B6EF5" font-size="9" font-family="'JetBrains Mono', monospace" opacity="0.7" letter-spacing="1">E2E</text>
+            <text x="252" y="443" fill="#4B6EF5" font-size="9" font-family="'JetBrains Mono', monospace" opacity="0.7" letter-spacing="1">E2E</text>
+            <text x="8" y="244" fill="#4B6EF5" font-size="9" font-family="'JetBrains Mono', monospace" opacity="0.7" letter-spacing="1">OWN</text>
+            <text x="447" y="244" fill="#4B6EF5" font-size="9" font-family="'JetBrains Mono', monospace" opacity="0.7" letter-spacing="1">OWN</text>
+          </svg>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Mission -->
-  <section class="am-section">
-    <div class="am-container am-section-inner">
-      <div class="am-section-header">
-        <h2>Mission</h2>
-        <div class="am-section-tag">INTENT</div>
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ── WHAT WE ARE BUILDING ─────────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">What we are building</span>
+        <h2 style="margin-top: 16px; max-width: 500px;">Three things that do not change.</h2>
       </div>
-      <p class="am-section-text">
-        Our mission is simple: make advanced computation
-        <strong>independent, portable and sovereign</strong>.
-        We design systems that do not require foreign cloud control, vendor dependency, or online access.
+      <div class="statements">
+        <div class="statement-block reveal" data-delay="0">
+          <span class="label">01</span>
+          <p>We build our own infrastructure. No rented cloud. No third-party compute.</p>
+        </div>
+        <div class="statement-block reveal" data-delay="80">
+          <span class="label">02</span>
+          <p>We don't have an advertising business. There is no model that requires knowing what you say.</p>
+        </div>
+        <div class="statement-block reveal" data-delay="160">
+          <span class="label">03</span>
+          <p>We are based in Qatar. Built for this region and the people connected to it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ROADMAP STRIP ─────────────────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Where we are</span>
+        <h2 style="margin-top: 16px;">Progress, as it stands.</h2>
+      </div>
+      <div class="roadmap-strip reveal">
+        <div class="phase-block">
+          <div class="phase-number">Phase 01</div>
+          <div class="phase-name">Infrastructure</div>
+          <div class="phase-status status-complete">Bench-Verified</div>
+          <p class="phase-desc">Core compute, network, and storage layer built on hardware we own outright, cold-reboot-verified end to end. Production-scale clustering is designed and sequenced next.</p>
+        </div>
+        <div class="phase-block active">
+          <div class="phase-number">Phase 02</div>
+          <div class="phase-name">Platform</div>
+          <div class="phase-status status-active">In Progress</div>
+          <p class="phase-desc">End-to-end encrypted messaging working using the Signal Protocol. Push notifications fully self-hosted — no Google dependency anywhere in the chain. Sealed sender is in final implementation now. Voice calling architecture is locked, build starts next.</p>
+        </div>
+        <div class="phase-block">
+          <div class="phase-number">Phase 03</div>
+          <div class="phase-name">Beta</div>
+          <div class="phase-status status-upcoming">Upcoming</div>
+          <p class="phase-desc">Closed beta. Waitlist invites sent in order as real-device connectivity and voice calling are validated.</p>
+        </div>
+        <div class="phase-block">
+          <div class="phase-number">Phase 04</div>
+          <div class="phase-name">Launch</div>
+          <div class="phase-status status-upcoming">Upcoming</div>
+          <p class="phase-desc">Open access — no waitlist gate, no application required to join. Non-profits, journalists, and activists get guaranteed free access, permanently.</p>
+        </div>
+      </div>
+      <p class="body reveal" style="margin-top: 28px;">
+        Want to know when beta opens? Join the waitlist and we will reach you first.
       </p>
     </div>
   </section>
 
-</main>
+  <!-- ── FOOTER CTA ─────────────────────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-band-glow"></div>
+        <span class="label" style="display: block; margin-bottom: 20px;">Get early access</span>
+        <h2>Be part of it from the start.</h2>
+        <p>Fenrir is in development. Join the waitlist and we will notify you when beta opens. No spam. One message when it matters.</p>
+        <a href="under-construction.html" class="btn btn-primary btn-lg">Notify me when it's ready</a>
+      </div>
+    </div>
+  </section>
 
-<footer class="am-footer">
-  <div class="am-container am-footer-inner">
-    <div class="am-footer-left">
-      <div class="am-footer-title">© AetherMind S.I.C LLC | Project Avalon</div>
-      <div class="am-footer-subtitle">SOVEREIGN INFRASTRUCTURE • OFFLINE AI • PRIVATE CLOUD</div>
-      <div class="am-footer-meta">Headquartered in Qatar</div>
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
+          <p>Building what we believe communication should be.</p>
+          <p style="margin-top: 8px;">Headquartered in Qatar.</p>
+        </div>
+        <div class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-nav-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="fenrir.html">Fenrir</a></li>
+              <li><a href="roadmap.html">Roadmap</a></li>
+              <li><a href="under-construction.html">Get notified</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AetherMind S.I.C LLC. All rights reserved.</p>
+        <a href="mailto:Wafic@aethermind.qa" style="font-size: 13px; color: var(--mist); transition: color 0.2s;">Wafic@aethermind.qa</a>
+        <p>Qatar</p>
+      </div>
     </div>
-    <div class="am-footer-right">
-      <a href="security.html" class="am-footer-link">Sovereignty Statement</a>
-      <a href="request-briefing.html" class="am-footer-link">Request Meeting</a>
-    </div>
-  </div>
-</footer>
-<script src="assets/js/main.js"></script>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

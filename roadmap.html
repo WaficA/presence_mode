@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How AetherMind is building Fenrir. Honest phases, clear progress, no launch-date promises we can't guarantee.">
+  <title>Roadmap — AetherMind</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fenrir.html">Fenrir</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="roadmap.html" class="active">Roadmap</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="under-construction.html" class="btn btn-primary btn-sm">Notify me when it's ready</a>
+        </div>
+        <button class="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Navigation">
+    <a href="index.html">Home</a>
+    <a href="fenrir.html">Fenrir</a>
+    <a href="security.html">Security</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="about.html">About</a>
+    <a href="under-construction.html" class="btn btn-primary" style="margin-top: 8px;">Notify me when it's ready</a>
+  </div>
+
+  <div class="roadmap-hero">
+    <div class="container">
+      <div class="reveal" style="max-width: 640px;">
+        <span class="label" style="display: block; margin-bottom: 20px;">Progress</span>
+        <h1 class="display">How we are<br><em>building this.</em></h1>
+        <p class="lead" style="margin-top: 20px;">
+          This is where we are and where we are going. No launch dates — we will not
+          promise what we cannot guarantee. What we will do is tell you exactly what
+          phase we are in and what comes next.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="timeline">
+
+        <div class="timeline-phase reveal" data-status="complete" data-delay="0">
+          <div class="timeline-node-col">
+            <span class="timeline-node"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <button class="timeline-header" aria-expanded="true" aria-controls="phase-01-detail" id="phase-01-toggle">
+              <div class="timeline-header-text">
+                <span class="timeline-phase-num">Phase 01</span>
+                <span class="timeline-phase-title">Infrastructure</span>
+              </div>
+              <span class="phase-status status-complete">Bench-Verified</span>
+              <span class="timeline-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="timeline-detail-wrap" id="phase-01-detail" role="region" aria-labelledby="phase-01-toggle">
+              <div class="timeline-detail-inner">
+                <p>Core virtualization, networking, and backend services built on hardware we own outright, and cold-reboot-verified — our bar for calling anything done. Multi-node clustering and distributed storage are designed and sequenced as the platform scales; network segmentation is already locked and reboot-persistent today.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-phase reveal" data-status="active" data-delay="80">
+          <div class="timeline-node-col">
+            <span class="timeline-node"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <button class="timeline-header" aria-expanded="true" aria-controls="phase-02-detail" id="phase-02-toggle">
+              <div class="timeline-header-text">
+                <span class="timeline-phase-num">Phase 02</span>
+                <span class="timeline-phase-title">Platform</span>
+              </div>
+              <span class="phase-status status-active">In Progress</span>
+              <span class="timeline-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="timeline-detail-wrap" id="phase-02-detail" role="region" aria-labelledby="phase-02-toggle">
+              <div class="timeline-detail-inner">
+                <p>End-to-end encrypted messaging live using the Signal Protocol, confirmed device to device. Push notifications fully self-hosted — no Google Firebase anywhere in the chain. Sealed sender is in final implementation now, closing out this phase. Voice calling signaling architecture is locked; build begins once messaging hardening is done.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-phase reveal" data-status="upcoming" data-delay="160">
+          <div class="timeline-node-col">
+            <span class="timeline-node"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <button class="timeline-header" aria-expanded="true" aria-controls="phase-03-detail" id="phase-03-toggle">
+              <div class="timeline-header-text">
+                <span class="timeline-phase-num">Phase 03</span>
+                <span class="timeline-phase-title">Beta</span>
+              </div>
+              <span class="phase-status status-upcoming">Upcoming</span>
+              <span class="timeline-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="timeline-detail-wrap" id="phase-03-detail" role="region" aria-labelledby="phase-03-toggle">
+              <div class="timeline-detail-inner">
+                <p>Closed beta. Waitlist invites sent in order as real-device connectivity and voice calling are validated. Real users, real feedback. No public access yet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-phase reveal" data-status="upcoming" data-delay="240">
+          <div class="timeline-node-col">
+            <span class="timeline-node"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <button class="timeline-header" aria-expanded="true" aria-controls="phase-04-detail" id="phase-04-toggle">
+              <div class="timeline-header-text">
+                <span class="timeline-phase-num">Phase 04</span>
+                <span class="timeline-phase-title">Launch</span>
+              </div>
+              <span class="phase-status status-upcoming">Upcoming</span>
+              <span class="timeline-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="timeline-detail-wrap" id="phase-04-detail" role="region" aria-labelledby="phase-04-toggle">
+              <div class="timeline-detail-inner">
+                <p>Open access. The waitlist gate comes down — no application, no invitation required to join. Non-profits, journalists, and activists get guaranteed free access, unconditionally — a permanent commitment, not a launch promotion. Pricing for general individual use is addressed in Phase 05.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-phase reveal" data-status="upcoming" data-delay="320">
+          <div class="timeline-node-col">
+            <span class="timeline-node"></span>
+          </div>
+          <div class="timeline-body">
+            <button class="timeline-header" aria-expanded="true" aria-controls="phase-05-detail" id="phase-05-toggle">
+              <div class="timeline-header-text">
+                <span class="timeline-phase-num">Phase 05</span>
+                <span class="timeline-phase-title">Sustainable</span>
+              </div>
+              <span class="phase-status status-upcoming">Upcoming</span>
+              <span class="timeline-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="timeline-detail-wrap" id="phase-05-detail" role="region" aria-labelledby="phase-05-toggle">
+              <div class="timeline-detail-inner">
+                <p>Commercial and organisational tiers introduced to help fund the infrastructure. No advertising, no data selling — that does not move regardless of what the pricing model ends up being. Pricing for individual, non-commercial use is decided separately as the platform's economics become clear; non-profits, journalists, and activists keep guaranteed free access either way.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="transparency-note reveal" style="margin-top: 48px;">
+        <p>
+          We update this page when phases change. If something takes longer than expected,
+          we will say so here. We do not hide delays behind vague language.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-band-glow"></div>
+        <span class="label" style="display: block; margin-bottom: 20px;">Get in the queue</span>
+        <h2>Your position is your place in line.</h2>
+        <p>Waitlist invites go out in order as each phase clears. We reach you when your spot opens.</p>
+        <a href="under-construction.html" class="btn btn-primary btn-lg">Notify me when it's ready</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
+          <p>Building what we believe communication should be.</p>
+          <p style="margin-top: 8px;">Headquartered in Qatar.</p>
+        </div>
+        <div class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-nav-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="fenrir.html">Fenrir</a></li>
+              <li><a href="roadmap.html">Roadmap</a></li>
+              <li><a href="under-construction.html">Get notified</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AetherMind S.I.C LLC. All rights reserved.</p>
+        <a href="mailto:Wafic@aethermind.qa" style="font-size: 13px; color: var(--mist); transition: color 0.2s;">Wafic@aethermind.qa</a>
+        <p>Qatar</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

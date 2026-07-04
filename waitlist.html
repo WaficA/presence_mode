@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get notified when Fenrir is ready. One email when your spot opens.">
+  <title>Get Notified — Fenrir by AetherMind</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fenrir.html">Fenrir</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <button class="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Navigation">
+    <a href="index.html">Home</a>
+    <a href="fenrir.html">Fenrir</a>
+    <a href="security.html">Security</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="about.html">About</a>
+    <a href="under-construction.html" class="btn btn-primary" style="margin-top: 8px;">Notify me when it's ready</a>
+  </div>
+
+  <section class="waitlist-hero">
+    <div class="waitlist-hero-glow"></div>
+    <div class="container">
+      <div class="waitlist-content">
+
+        <span class="label label-signal" style="display: block; margin-bottom: 24px;">Early Access</span>
+        <h1 class="display" style="font-size: clamp(32px, 5vw, 56px);">Get notified when<br><em>Fenrir is ready.</em></h1>
+        <p style="font-size: 16px; color: var(--mist); line-height: 1.7; margin-top: 16px; max-width: 440px;">
+          Leave your email. We will reach you when Fenrir is ready to use.
+          One message. Nothing else.
+        </p>
+
+        <div class="waitlist-promises">
+          <div class="waitlist-promise">
+            <span class="promise-dot"></span>
+            <span>Early access to Fenrir when your spot in the queue opens.</span>
+          </div>
+          <div class="waitlist-promise">
+            <span class="promise-dot"></span>
+            <span>One notification when your invite is ready. No newsletters, no marketing emails.</span>
+          </div>
+          <div class="waitlist-promise">
+            <span class="promise-dot"></span>
+            <span>Your email stored on our infrastructure. Not shared with anyone.</span>
+          </div>
+        </div>
+
+        <form class="waitlist-form" id="waitlist-form" novalidate>
+          <div class="form-field">
+            <label for="name">Name <span>(optional)</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="Your email address">
+          </div>
+          <button type="submit" id="submit-btn" class="btn btn-primary btn-lg" style="margin-top: 8px; width: 100%; justify-content: center;">
+            Notify me
+          </button>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <h3>You're on the list.</h3>
+          <p>We will reach you when your invite is ready. That is the only email you will get from us until then.</p>
+        </div>
+
+        <p class="form-note" style="margin-top: 20px;">
+          Your email is used only to notify you when your Fenrir access is ready.
+          It is stored on AetherMind infrastructure. It is not shared, sold,
+          or used for any other purpose.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
+          <p>Building what we believe communication should be.</p>
+          <p style="margin-top: 8px;">Headquartered in Qatar.</p>
+        </div>
+        <div class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-nav-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="fenrir.html">Fenrir</a></li>
+              <li><a href="roadmap.html">Roadmap</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AetherMind S.I.C LLC. All rights reserved.</p>
+        <a href="mailto:Wafic@aethermind.qa" style="font-size: 13px; color: var(--mist); transition: color 0.2s;">Wafic@aethermind.qa</a>
+        <p>Qatar</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

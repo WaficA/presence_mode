@@ -2,117 +2,309 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sovereignty Statement - AetherMind</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AetherMind sovereignty and security statement. Offline by design, no telemetry, no cloud dependence.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How Fenrir is built and secured. Cryptographic architecture, infrastructure design, and what we do and do not store.">
+  <title>Security — AetherMind</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<!-- FLOATING RUNES -->
-<div class="am-float am-float-left">
-  <span class="rune">⟒</span>
-  <span class="rune">⟢</span>
-  <span class="rune">ᚱ</span>
-  <span class="rune">ᚦ</span>
-  <span class="rune">⋔</span>
-</div>
-
-<div class="am-float am-float-right">
-  <span class="rune">ᛉ</span>
-  <span class="rune">⟁</span>
-  <span class="rune">ᚬ</span>
-  <span class="rune">⨳</span>
-  <span class="rune">⋈</span>
-</div>
-
 <body>
-<header class="am-header">
-  <div class="am-container am-header-inner">
-    <div class="am-logo">
-      <span class="am-logo-mark">AETHERMIND SIC</span>
-      <span class="am-logo-sub">SOVEREIGN SYSTEMS</span>
-    </div>
-    <nav class="am-nav">
-      <a href="index.html" class="am-nav-link">Home</a>
-      <a href="aethernode.html" class="am-nav-link">AetherNode</a>
-      <a href="lab.html" class="am-nav-link">Lab</a>
-      <a href="use-cases.html" class="am-nav-link">Use Cases</a>
-      <a href="request-briefing.html" class="am-nav-link">Request Briefing</a>
-      <a href="security.html" class="am-nav-link am-nav-link-active">Sovereignty</a>
-    </nav>
-  </div>
-</header>
 
-<main>
-  <section class="am-hero am-hero-sub">
-    <div class="am-container am-hero-inner">
-      <div class="am-hero-text">
-        <h1 class="am-hero-title">SOVEREIGNTY & SECURITY</h1>
-        <p class="am-hero-subtitle">
-          Our commitment: no hidden dependencies, no forced connectivity, no data extraction.
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fenrir.html">Fenrir</a></li>
+          <li><a href="security.html" class="active">Security</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="under-construction.html" class="btn btn-primary btn-sm">Notify me when it's ready</a>
+        </div>
+        <button class="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Navigation">
+    <a href="index.html">Home</a>
+    <a href="fenrir.html">Fenrir</a>
+    <a href="security.html">Security</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="about.html">About</a>
+    <a href="under-construction.html" class="btn btn-primary" style="margin-top: 8px;">Notify me when it's ready</a>
+  </div>
+
+  <!-- ── HERO ──────────────────────────────────────────────── -->
+  <div class="about-hero">
+    <div class="container">
+      <div class="reveal" style="max-width: 720px;">
+        <span class="label" style="display: block; margin-bottom: 20px;">Security</span>
+        <h1 class="display">How this is built.<br><em>Not what we claim.</em></h1>
+        <p class="lead" style="margin-top: 20px;">
+          This page is for anyone who wants to understand the architecture behind Fenrir —
+          how messages move, what the server sees, and what we have deliberately made
+          impossible for ourselves to do.
         </p>
       </div>
-      <!-- NEW HERO LOGO ON RIGHT SIDE -->
-    <div class="am-hero-logo">
-      <img src="assets/img/branding/white.svg" alt="AetherMind Logo">
-    </div>
-    </div>
-  </section>
-
-  <section class="am-section">
-    <div class="am-container am-section-inner">
-      <div class="am-section-header">
-        <h2>Security Through Ownership</h2>
-        <div class="am-section-tag">POLICY</div>
-      </div>
-      <p class="am-section-text">
-        "AetherMind provides sovereign infrastructure solutions. Our systems are offline by default and
-        designed so that computation, data and configurations remain fully under the customer control."
-      </p>
-      <p class="am-section-text">
-        We do not collect, store or transmit customer data from deployed systems. We do not require persistent
-        connections to our infrastructure to keep your systems working.
-      </p>
-
-      <div class="am-callout am-callout-strong">
-        <span>NO TELEMETRY</span>
-        <span>NO THIRD-PARTY CLOUD DEPENDENCE</span>
-        <span>NO FORCED REMOTE ACCESS</span>
-      </div>
-
-      <p class="am-section-text">
-        If remote support or monitoring is requested, it is implemented explicitly, with clear consent and under
-        customer governance. Our default posture is: <strong>local first, offline by default</strong>.
-      </p>
-    </div>
-  </section>
-
-  <section class="am-section am-section-alt">
-    <div class="am-container am-section-inner">
-      <div class="am-section-header">
-        <h2>Jurisdiction & Control</h2>
-        <div class="am-section-tag">GOVERNANCE</div>
-      </div>
-      <p class="am-section-text">
-        AetherMind is a Qatari-registered company. We work with customers to align infrastructure designs with
-        local regulations, data residency requirements and national strategies for technological sovereignty.
-      </p>
-    </div>
-  </section>
-</main>
-
-<footer class="am-footer">
-  <div class="am-container am-footer-inner">
-    <div class="am-footer-left">
-      <div class="am-footer-title">© AetherMind S.I.C LLC | Project Avalon</div>
-      <div class="am-footer-subtitle">SOVEREIGN INFRASTRUCTURE • OFFLINE AI • PRIVATE CLOUD</div>
-      <div class="am-footer-meta">Sovereignty Statement</div>
-    </div>
-    <div class="am-footer-right">
-      <span class="am-footer-link">Developed in Qatar. Engineered for the Globe.</span>
     </div>
   </div>
-</footer>
 
-<script src="assets/js/main.js"></script>
+  <!-- ── SECTIONS ──────────────────────────────────────────── -->
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="about-blocks reveal">
+
+        <!-- CRYPTOGRAPHIC FOUNDATION -->
+        <div class="about-block">
+          <span class="label" style="display: block; margin-bottom: 20px;">Encryption</span>
+          <h3>Signal Protocol. Double Ratchet. Forward secrecy.</h3>
+          <p>
+            Fenrir uses the Signal Protocol for end-to-end encryption — the same protocol
+            used by Signal and trusted by security researchers worldwide. Every message
+            is encrypted on the sender's device before it leaves. It is decrypted only
+            on the recipient's device. The server handles an opaque ciphertext blob
+            it cannot read.
+          </p>
+          <p>
+            The Double Ratchet algorithm means every message uses a different encryption
+            key. Compromising one message does not compromise past or future messages.
+            This property is called forward secrecy.
+          </p>
+
+          <!-- crypto properties -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 40px;">
+            <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px;">
+              <p style="font-family: var(--font-mono); font-size: 11px; color: var(--signal); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px;">Protocol</p>
+              <p style="font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 8px;">Signal Protocol</p>
+              <p style="font-size: 13px; color: var(--mist); line-height: 1.65;">Double Ratchet + X3DH. Industry standard. Independently audited.</p>
+            </div>
+            <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px;">
+              <p style="font-family: var(--font-mono); font-size: 11px; color: var(--signal); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px;">Key Exchange</p>
+              <p style="font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 8px;">X3DH</p>
+              <p style="font-size: 13px; color: var(--mist); line-height: 1.65;">Extended Triple Diffie-Hellman. Establishes encrypted sessions without the server seeing keys.</p>
+            </div>
+            <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px;">
+              <p style="font-family: var(--font-mono); font-size: 11px; color: var(--signal); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px;">Forward Secrecy</p>
+              <p style="font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 8px;">Per-message keys</p>
+              <p style="font-size: 13px; color: var(--mist); line-height: 1.65;">Each message encrypted with a unique key. Past messages stay safe even if a key is later compromised.</p>
+            </div>
+            <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px;">
+              <p style="font-family: var(--font-mono); font-size: 11px; color: var(--mist); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px;">V2 — Planned</p>
+              <p style="font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 8px;">Triple Ratchet</p>
+              <p style="font-size: 13px; color: var(--mist); line-height: 1.65;">PQXDH + SPQR. Post-quantum resistant. Matches Signal's current production posture. Ships when stable.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEALED SENDER -->
+        <div class="about-block" style="border-top: 1px solid var(--border);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+            <span class="label">Metadata</span>
+            <span class="phase-status status-active" style="width: fit-content;">In final implementation</span>
+          </div>
+          <h3>Sealed sender — landing this phase.</h3>
+          <p>
+            Standard encrypted messaging protects message content but still exposes metadata —
+            who sent what to whom, and when. We're closing that gap with sealed sender: the
+            sender's identity is encrypted inside the message payload using the recipient's
+            identity key, so the server sees only the recipient and a timestamp — not the sender.
+          </p>
+          <p>
+            To be precise about where this stands: usernames are registered, and your account
+            exists on our servers today. Sealed sender is the change that stops the server from
+            linking a sender to a delivery at the moment a message arrives — it is the last piece
+            closing out the current messaging-hardening phase, ahead of voice.
+          </p>
+          <div style="margin-top: 32px; padding: 24px 28px; background: var(--surface); border: 1px solid var(--border-mid); border-radius: var(--radius-md); border-left: 3px solid var(--signal);">
+            <p style="font-family: var(--font-mono); font-size: 12px; color: var(--mist); letter-spacing: 0.08em; margin-bottom: 8px;">WHAT THE SERVER WILL STORE PER MESSAGE, ONCE THIS LANDS</p>
+            <p style="font-size: 14px; color: var(--soft); line-height: 1.75;">
+              An opaque ciphertext blob. A recipient identifier. A timestamp. Delivery status.
+              No sender identity in the delivery record. That is the target, and it's what
+              we hold ourselves to before calling this done.
+            </p>
+          </div>
+        </div>
+
+        <!-- IDENTITY MODEL -->
+        <div class="about-block" style="border-top: 1px solid var(--border);">
+          <span class="label" style="display: block; margin-bottom: 20px;">Identity</span>
+          <h3>No phone number. No email. Username only.</h3>
+          <p>
+            Registration requires a username and password. Nothing else. No phone number,
+            no email address, no external identity anchor of any kind. Your identity on
+            Fenrir is your username — chosen at registration, permanent.
+          </p>
+          <p>
+            Passwords are hashed with bcrypt server-side. The plaintext password never
+            leaves your device and is never stored anywhere. Account recovery is via a
+            backup code generated locally at registration and shown once. If lost, the
+            account cannot be recovered. This is the price of not requiring a phone number —
+            we communicate it clearly.
+          </p>
+          <p>
+            Contact discovery is by username search only. We do not scan your contacts.
+            We do not ask for your address book. There is no contact hashing. If you know
+            someone's username, you can message them. If you do not, you cannot.
+          </p>
+        </div>
+
+        <!-- INFRASTRUCTURE -->
+        <div class="about-block" style="border-top: 1px solid var(--border);">
+          <span class="label" style="display: block; margin-bottom: 20px;">Infrastructure</span>
+          <h3>Our hardware. Our network. Our rules.</h3>
+          <p>
+            Fenrir runs on physical infrastructure owned and operated by AetherMind.
+            No hyperscaler is in the data path. No AWS, no GCP, no Azure.
+            The compute, storage, and networking are ours.
+          </p>
+          <p>
+            Today's build runs on a segmented, VLAN-based network — management traffic,
+            VM traffic, and application traffic isolated from each other by design, default-deny
+            between segments unless explicitly allowed. This is validated and reboot-persistent
+            now. The full production topology — a dedicated perimeter firewall, redundant storage
+            replication, and a fully isolated backup network — is architecture-locked and sequenced
+            next; it is not yet the live topology.
+          </p>
+          <p>
+            Reaching this backend from outside our private network requires one external
+            component: a relay, needed because our current connection sits behind CGNAT with
+            no static public IP on-site. This relay is being brought online now, as this build
+            phase closes. Design is locked: it will hold no user data and no encryption keys,
+            and it will see only connection-level metadata — timing, and that a connection
+            occurred — never content, which stays end-to-end encrypted regardless of transport.
+            That disclosure holds permanently, not just until the relay is live: when a
+            self-owned static IP replaces it, the relay itself goes away, but the same standard —
+            no third party ever sees content — is what it's held to the entire time.
+          </p>
+
+          <!-- traffic path -->
+          <div style="margin-top: 40px;">
+            <p style="font-family: var(--font-mono); font-size: 11px; color: var(--mist); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;">Traffic path — inbound (target design)</p>
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 14px; font-family: var(--font-mono); font-size: 12px; color: var(--soft);">Your device</div>
+              <span style="color: var(--mist); font-size: 12px;">→</span>
+              <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 14px; font-family: var(--font-mono); font-size: 12px; color: var(--soft);">Relay</div>
+              <span style="color: var(--mist); font-size: 12px;">→</span>
+              <div style="background: var(--surface); border: 1px solid var(--signal-dim); border-radius: var(--radius-sm); padding: 8px 14px; font-family: var(--font-mono); font-size: 12px; color: var(--signal);">Reverse proxy (TLS)</div>
+              <span style="color: var(--mist); font-size: 12px;">→</span>
+              <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 14px; font-family: var(--font-mono); font-size: 12px; color: var(--soft);">Application backend</div>
+            </div>
+            <p style="font-size: 13px; color: var(--mist); margin-top: 12px; line-height: 1.65;">
+              The relay sees only encrypted tunnel traffic plus connection metadata. TLS terminates
+              at our reverse proxy. The application backend never receives a raw connection from
+              the internet. This is the locked design being brought up now — it is labeled target
+              design here, not a claim that it is already carrying live traffic.
+            </p>
+          </div>
+        </div>
+
+        <!-- PUSH NOTIFICATIONS -->
+        <div class="about-block" style="border-top: 1px solid var(--border);">
+          <span class="label" style="display: block; margin-bottom: 20px;">Push Notifications</span>
+          <h3>Self-hosted. No Google. No Apple in the data path.</h3>
+          <p>
+            Push notifications are delivered via a self-hosted UnifiedPush server.
+            No Google FCM. No Apple APNs. No third-party service receives any information
+            about your notification events. This works on standard Android and GrapheneOS.
+          </p>
+          <p>
+            Notification payloads carry zero content. They are a signal to your device
+            to wake the app and fetch the message over the encrypted channel.
+            The notification itself tells nothing to anyone who sees it.
+          </p>
+        </div>
+
+        <!-- WHAT IS NOT USED -->
+        <div class="about-block" style="border-top: 1px solid var(--border);">
+          <span class="label" style="display: block; margin-bottom: 20px;">Explicitly absent</span>
+          <h3>What is not in this stack.</h3>
+          <p>The following are absent by design. This is not marketing language — these components do not exist in the architecture.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 28px;">
+            <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+              <p style="font-size: 14px; color: var(--soft); font-weight: 500; margin-bottom: 4px;">Advertising infrastructure</p>
+              <p style="font-size: 13px; color: var(--mist);">No ad network. No analytics pipeline. No data warehouse.</p>
+            </div>
+            <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+              <p style="font-size: 14px; color: var(--soft); font-weight: 500; margin-bottom: 4px;">Third-party cloud</p>
+              <p style="font-size: 13px; color: var(--mist);">No AWS, GCP, Azure, or any hyperscaler in the data path.</p>
+            </div>
+            <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+              <p style="font-size: 14px; color: var(--soft); font-weight: 500; margin-bottom: 4px;">SMS gateway</p>
+              <p style="font-size: 13px; color: var(--mist);">No OTP. No Twilio. No external identity verification of any kind.</p>
+            </div>
+            <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+              <p style="font-size: 14px; color: var(--soft); font-weight: 500; margin-bottom: 4px;">Google FCM / Apple APNs</p>
+              <p style="font-size: 13px; color: var(--mist);">Push notifications are self-hosted. No third-party notification service.</p>
+            </div>
+            <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+              <p style="font-size: 14px; color: var(--soft); font-weight: 500; margin-bottom: 4px;">Contact hashing</p>
+              <p style="font-size: 13px; color: var(--mist);">No phone book access. No contact matching. Username search only.</p>
+            </div>
+            <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+              <p style="font-size: 14px; color: var(--soft); font-weight: 500; margin-bottom: 4px;">Behavioural profiling</p>
+              <p style="font-size: 13px; color: var(--mist);">No usage tracking. No session analytics. No profile building.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-band-glow"></div>
+        <span class="label" style="display: block; margin-bottom: 20px;">Early access</span>
+        <h2>Built this way from the start.</h2>
+        <p>These are not features added later. This is how Fenrir was designed from day one.</p>
+        <a href="under-construction.html" class="btn btn-primary btn-lg">Notify me when it's ready</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
+          <p>Building what we believe communication should be.</p>
+          <p style="margin-top: 8px;">Headquartered in Qatar.</p>
+        </div>
+        <div class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-nav-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="fenrir.html">Fenrir</a></li>
+              <li><a href="roadmap.html">Roadmap</a></li>
+              <li><a href="security.html">Security</a></li>
+              <li><a href="under-construction.html">Get notified</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AetherMind S.I.C LLC. All rights reserved.</p>
+        <a href="mailto:Wafic@aethermind.qa" style="font-size: 13px; color: var(--mist); transition: color 0.2s;">Wafic@aethermind.qa</a>
+        <p>Qatar</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
