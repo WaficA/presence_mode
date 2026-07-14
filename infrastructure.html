@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sovereign infrastructure by AetherMind — self-hosted, air-gapped-capable compute, network, and storage, owned and operated outright. For operators, enterprise, and regulated environments.">
+  <title>Sovereign Infrastructure — AetherMind</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="infrastructure.html" class="active">Infrastructure</a></li>
+          <li><a href="fenrir.html">Fenrir</a></li>
+          <li><a href="custom-builds.html">Custom Builds</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get in touch</a>
+        </div>
+        <button class="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Navigation">
+    <a href="index.html">Home</a>
+    <a href="infrastructure.html">Infrastructure</a>
+    <a href="fenrir.html">Fenrir</a>
+    <a href="custom-builds.html">Custom Builds</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top: 8px;">Get in touch</a>
+  </div>
+
+  <!-- ── HERO ──────────────────────────────────────────────── -->
+  <div class="about-hero">
+    <div class="container">
+      <div class="reveal" style="max-width: 720px;">
+        <span class="label" style="display: block; margin-bottom: 20px;">Sovereign Infrastructure</span>
+        <h1 class="display">Own the stack.<br><em>Don't rent it.</em></h1>
+        <p class="lead" style="margin-top: 20px;">
+          Self-hosted compute, network, and storage — designed, built, and operated on
+          hardware owned outright. No hyperscaler, no vendor lock-in, no third party
+          between an organisation and its own systems.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BLOCKS ────────────────────────────────────────────── -->
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="about-blocks reveal">
+
+        <div class="about-block">
+          <h3>What this is.</h3>
+          <p>
+            A complete infrastructure stack that an organisation owns rather than leases:
+            virtualization, segmented networking, and distributed storage, built from the
+            hardware up. It is the same foundation Fenrir runs on — generalised for operators,
+            enterprises, and regulated environments that cannot put their systems on someone
+            else's cloud.
+          </p>
+          <p>
+            Air-gapped-capable by design: it can run fully disconnected from the public
+            internet, for environments where that is a requirement rather than a preference.
+          </p>
+        </div>
+
+        <div class="about-block" style="border-top: 1px solid var(--border);">
+          <h3>Built to a standard, not a slogan.</h3>
+          <p>
+            We hold a hard line between what is built and what is designed — and we tell you
+            which is which. Our bar for "done" is cold-reboot verification: a service is
+            finished only when the machine can be powered off cold, powered back on, and
+            recover on its own with nothing started by hand.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 28px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+              <span style="color: var(--soft); font-size: 15px;">Segmented, reboot-persistent network fabric</span>
+              <span class="phase-status status-complete">Built</span>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+              <span style="color: var(--soft); font-size: 15px;">Self-hosted virtualization, backend services running</span>
+              <span class="phase-status status-complete">Built</span>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+              <span style="color: var(--soft); font-size: 15px;">Multi-node clustering &amp; distributed storage (production scale)</span>
+              <span class="phase-status status-upcoming">Designed</span>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+              <span style="color: var(--soft); font-size: 15px;">Enterprise perimeter firewall &amp; core switching</span>
+              <span class="phase-status status-upcoming">Designed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-block" style="border-top: 1px solid var(--border);">
+          <h3>Proven in the hardest version of the problem.</h3>
+          <p>
+            The demanding case isn't a managed cloud with a one-command installer — it's
+            standing up a full stack by hand, air-gapped, with no internet and no lifecycle
+            automation doing the work for you: your own offline package repositories, databases,
+            services, and network fabric, brought up from bare metal. That is the version that
+            forces real understanding of every layer, and it is work we have done and validated
+            in real air-gapped environments.
+          </p>
+          <p style="color: var(--mist); font-size: 15px;">
+            A published reference blueprint of this work is available on request.
+          </p>
+          <!-- AV-STACK PROOF LINK — enable when you want it public:
+          <p style="margin-top: 8px;">
+            <a href="https://github.com/WaficA/openstack-airgapped-deployment-blueprint"
+               style="font-family: var(--font-mono); font-size: 14px; color: var(--signal);">
+              View the published blueprint &rarr;
+            </a>
+          </p>
+          -->
+        </div>
+
+        <div class="about-block" style="border-top: 1px solid var(--border);">
+          <h3>Who it is for.</h3>
+          <p>
+            Telecom operators, enterprises, government and regulated bodies, and any organisation
+            that needs its infrastructure to be owned, auditable, and under its own control — not
+            sitting on a hyperscaler with a compellable copy of the data and a bill that scales
+            against every user. If sovereignty over your own systems is a requirement, this is
+            the foundation for it.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-band-glow"></div>
+        <span class="label" style="display: block; margin-bottom: 20px;">Build on owned ground</span>
+        <h2>Infrastructure you own, not infrastructure you rent.</h2>
+        <p>If your systems need to be sovereign — owned, air-gap-capable, under your control — let's talk about what that looks like for you.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
+          <p>Sovereign infrastructure. Secure communications. Custom builds.</p>
+          <p style="margin-top: 8px;">Headquartered in Qatar.</p>
+        </div>
+        <div class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-nav-col">
+            <h4>Platform</h4>
+            <ul>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="fenrir.html">Fenrir</a></li>
+              <li><a href="custom-builds.html">Custom Builds</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Fenrir</h4>
+            <ul>
+              <li><a href="security.html">Security</a></li>
+              <li><a href="roadmap.html">Roadmap</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AetherMind S.I.C LLC. All rights reserved.</p>
+        <a href="mailto:Wafic@aethermind.qa" style="font-size: 13px; color: var(--mist); transition: color 0.2s;">Wafic@aethermind.qa</a>
+        <p>Qatar</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

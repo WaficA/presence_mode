@@ -17,13 +17,13 @@
         </a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
           <li><a href="fenrir.html">Fenrir</a></li>
-          <li><a href="security.html" class="active">Security</a></li>
-          <li><a href="roadmap.html">Roadmap</a></li>
+          <li><a href="custom-builds.html">Custom Builds</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
         <div class="nav-cta">
-          <a href="under-construction.html" class="btn btn-primary btn-sm">Notify me when it's ready</a>
+          <a href="contact.html" class="btn btn-primary btn-sm">Get in touch</a>
         </div>
         <button class="nav-hamburger" aria-label="Open menu">
           <span></span><span></span><span></span>
@@ -34,11 +34,11 @@
 
   <div class="mobile-menu" role="dialog" aria-label="Navigation">
     <a href="index.html">Home</a>
+    <a href="infrastructure.html">Infrastructure</a>
     <a href="fenrir.html">Fenrir</a>
-    <a href="security.html">Security</a>
-    <a href="roadmap.html">Roadmap</a>
+    <a href="custom-builds.html">Custom Builds</a>
     <a href="about.html">About</a>
-    <a href="under-construction.html" class="btn btn-primary" style="margin-top: 8px;">Notify me when it's ready</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top: 8px;">Get in touch</a>
   </div>
 
   <!-- ── HERO ──────────────────────────────────────────────── -->
@@ -52,6 +52,14 @@
           how messages move, what the server sees, and what we have deliberately made
           impossible for ourselves to do.
         </p>
+        <div style="margin-top: 32px;">
+        <nav class="subnav" aria-label="Fenrir sections">
+          <span class="subnav-tag">Fenrir</span>
+          <a href="fenrir.html">Overview</a>
+          <a href="security.html" class="current">Security</a>
+          <a href="roadmap.html">Roadmap</a>
+        </nav>
+        </div>
       </div>
     </div>
   </div>
@@ -107,20 +115,16 @@
         <div class="about-block" style="border-top: 1px solid var(--border);">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
             <span class="label">Metadata</span>
-            <span class="phase-status status-active" style="width: fit-content;">In final implementation</span>
+            <span class="phase-status status-upcoming" style="width: fit-content;">Designed</span>
           </div>
-          <h3>Sealed sender — landing this phase.</h3>
+          <h3>Sealed sender — designed for this phase.</h3>
           <p>
             Standard encrypted messaging protects message content but still exposes metadata —
-            who sent what to whom, and when. We're closing that gap with sealed sender: the
-            sender's identity is encrypted inside the message payload using the recipient's
-            identity key, so the server sees only the recipient and a timestamp — not the sender.
+            who sent what to whom, and when. We're closing that gap with sealed sender: removing the sender's identity from what the server can see at delivery, so the server sees only the recipient and a timestamp — not the sender. The exact mechanism is still being finalized.
           </p>
           <p>
             To be precise about where this stands: usernames are registered, and your account
-            exists on our servers today. Sealed sender is the change that stops the server from
-            linking a sender to a delivery at the moment a message arrives — it is the last piece
-            closing out the current messaging-hardening phase, ahead of voice.
+            exists on our servers today. Sealed sender is the change that will stop the server from linking a sender to a delivery at the moment a message arrives — the next piece in the current messaging-hardening phase, ahead of voice. It is designed, not yet built.
           </p>
           <div style="margin-top: 32px; padding: 24px 28px; background: var(--surface); border: 1px solid var(--border-mid); border-radius: var(--radius-md); border-left: 3px solid var(--signal);">
             <p style="font-family: var(--font-mono); font-size: 12px; color: var(--mist); letter-spacing: 0.08em; margin-bottom: 8px;">WHAT THE SERVER WILL STORE PER MESSAGE, ONCE THIS LANDS</p>
@@ -275,17 +279,23 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <img src="assets/img/branding/aethermind-logo.svg" alt="AetherMind">
-          <p>Building what we believe communication should be.</p>
+          <p>Sovereign infrastructure. Secure communications. Custom builds.</p>
           <p style="margin-top: 8px;">Headquartered in Qatar.</p>
         </div>
         <div class="footer-nav" aria-label="Footer navigation">
           <div class="footer-nav-col">
-            <h4>Product</h4>
+            <h4>Platform</h4>
             <ul>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
               <li><a href="fenrir.html">Fenrir</a></li>
-              <li><a href="roadmap.html">Roadmap</a></li>
+              <li><a href="custom-builds.html">Custom Builds</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Fenrir</h4>
+            <ul>
               <li><a href="security.html">Security</a></li>
-              <li><a href="under-construction.html">Get notified</a></li>
+              <li><a href="roadmap.html">Roadmap</a></li>
             </ul>
           </div>
           <div class="footer-nav-col">

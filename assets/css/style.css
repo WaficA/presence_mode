@@ -901,3 +901,78 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ─── FENRIR SECTION SUB-NAV ──────────────────────────────── */
+/* Product-level navigation. Deliberately NOT styled like the site nav:
+   the header is company-level (Home / Infrastructure / Fenrir / Custom Builds),
+   this is a segmented control that says "you are inside Fenrir". */
+.subnav {
+  display: inline-flex;
+  align-items: stretch;
+  gap: 4px;
+  padding: 5px;
+  background: var(--depth);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.subnav-tag {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mist);
+  padding: 0 14px 0 12px;
+  border-right: 1px solid var(--border);
+  margin-right: 4px;
+}
+.subnav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: var(--mist);
+  padding: 9px 16px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+.subnav a::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--border-mid);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.subnav a:hover {
+  color: var(--white);
+  background: var(--surface);
+}
+.subnav a:hover::before { background: var(--mist); }
+.subnav a.current {
+  color: var(--white);
+  background: var(--surface);
+}
+.subnav a.current::before {
+  background: var(--signal);
+  box-shadow: 0 0 8px var(--signal);
+}
+@media (max-width: 600px) {
+  .subnav { width: 100%; }
+  .subnav-tag {
+    width: 100%;
+    justify-content: center;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 8px 4px;
+    margin: 0 0 4px 0;
+  }
+  .subnav a { flex: 1; justify-content: center; }
+}
